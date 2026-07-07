@@ -43,7 +43,8 @@ Required tasks:
 - Implement `BookRestClientImpl` using `RestClient.Builder` to fetch one book
   by ID and all books, mapping each `BookApiResponse` to a `BookDto`.
 - Handle `RestClient` error cases (client errors, server errors, connection
-  issues) and rethrow them as `ClientException`.
+  issues) and rethrow them as `ClientException`. Verify this against at least
+  2-3 of the reserved chaos book IDs (991-993).
 - Keep URLs in configuration, not hardcoded in Java.
 
 Success criteria:
@@ -54,8 +55,8 @@ Success criteria:
   of leaking framework-specific exceptions.
 
 Bonus:
-- Use the reserved chaos book IDs (99, 991-999) to test your error handling
-  against real failure scenarios (timeouts, 404s, malformed responses, etc.).
+- Use the rest of the reserved chaos book IDs (99, 994-999) to test your error
+  handling against more failure scenarios (timeouts, malformed responses, etc.).
 
 ## Practical Task 2: WebClient
 
@@ -66,7 +67,8 @@ Required tasks:
   ID and all books reactively, mapping each `BookApiResponse` to a `BookDto`.
 - Implement fetching two books in parallel with `Mono.zip()`.
 - Handle `WebClient` error cases (response errors, request/connection issues)
-  and rethrow them as `ClientException`.
+  and rethrow them as `ClientException`. Verify this against at least 2-3 of
+  the reserved chaos book IDs (991-993).
 - Do not use `.block()`.
 
 Success criteria:
@@ -79,8 +81,8 @@ Success criteria:
   of leaking framework-specific exceptions.
 
 Bonus:
-- Use the reserved chaos book IDs (99, 991-999) to test resilience (retries,
-  timeouts, error mapping) in a non-blocking way.
+- Use the rest of the reserved chaos book IDs (99, 994-999) to test resilience
+  (retries, timeouts, error mapping) in a non-blocking way.
 
 ## Project Structure
 
