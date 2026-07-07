@@ -1,3 +1,8 @@
+#main tasks done rest + web client  with error handler
+#attemt to do retry based on exceptions type TimeoutException /  WebClientRequestException and WebClientResponseException (with some smart bot help)
+# unfortunatly didn't check properly 
+
+
 # External APIs Bootcamp - Demo App
 
 This Spring Boot project is the starter for **External APIs in Spring Boot**
